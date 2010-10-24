@@ -1,0 +1,61 @@
+# xmcd
+#
+# Track frame offsets:
+#       150
+#       21052
+#       43715
+#       58057
+#       71430
+#       92865
+#       117600
+#       131987
+#       150625
+#       163292
+#       181490
+#       195685
+#       210197
+#       233230
+#       249257
+#
+# Disc length: 3541 seconds
+#
+# Revision: 3
+# Processed by: cddbd v1.5.1PL2 Copyright (c) Steve Scherf et al.
+# Submitted via: CDex 1.51
+#
+DISCID=d50dd30f
+DTITLE=Various / Ska Island
+DYEAR=1997
+DGENRE=Reggae
+TTITLE0=King of Kings
+TTITLE1=Magic Star
+TTITLE2=Can't You See
+TTITLE3=The Stage
+TTITLE4=Crazy Bald Heads
+TTITLE5=Honky tonk Parts 1 & 2
+TTITLE6=Barefootin
+TTITLE7=Penny Reel
+TTITLE8=Stop That Train
+TTITLE9=Take Five
+TTITLE10=Rudy Girl
+TTITLE11=Shame and Scandal In The Family
+TTITLE12=Housewifes Choice
+TTITLE13=Kiss Bam Bam
+TTITLE14=Keep On Running
+EXTD= YEAR: 1997
+EXTT0=
+EXTT1=
+EXTT2=
+EXTT3=
+EXTT4=
+EXTT5=
+EXTT6=
+EXTT7=
+EXTT8=
+EXTT9=
+EXTT10=
+EXTT11=
+EXTT12=
+EXTT13=
+EXTT14=
+PLAYORDER=

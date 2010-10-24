@@ -1,0 +1,82 @@
+[2]\ > sudo ./a.out
+d50dd30f 15 150 21052 43715 58057 71430 92865 117600 131987 150625 163292 181490 195685 210197 233230 249257 3541
+
+
+discid 15 150 21052 43715 58057 71430 92865 117600 131987 150625 163292 181490 195685 210197 233230 249257 3541
+200 Disc ID is d50dd30f
+
+
+Escape character is '^]'.
+201 zaphod CDDBP server v1.5.1PL0 ready at Tue Nov 01 01:46:33 2005
+
+
+cddb hello user host client v
+200 Hello and welcome user@host running client v.
+
+
+ver
+200 cddbd v1.5.1PL0 Copyright (c) 1996-2004 Steve Scherf et al.
+
+
+cddb lscat
+210 OK, category list follows (until terminating `.')
+data
+folk
+jazz
+misc
+rock
+country
+blues
+newage
+reggae
+classical
+soundtrack
+.
+
+
+stat
+210 OK, status information follows (until terminating `.')
+Server status:
+    current proto: 1
+    max proto: 6
+    interface: cddbp
+    gets: no
+    puts: no
+    updates: no
+    posting: no
+    validation: accepted
+    quotes: no
+    strip ext: no
+    secure: yes
+    current users: 4
+    max users: 100
+Database entries: 1871542
+Database entries by category:
+    data: 19209
+    folk: 133737
+    jazz: 108090
+    misc: 599479
+    rock: 539808
+    country: 48886
+    blues: 97594
+    newage: 71832
+    reggae: 24004
+    classical: 161561
+    soundtrack: 67342
+.
+
+
+quit
+
+
+
+cddb query d50dd30f 15 150 21052 43715 58057 71430 92865 117600 131987 150625 163292 181490 195685 210197 233230 249257 3541
+211 Found inexact matches, list follows (until terminating `.')
+reggae d50dd30f Various / Ska Island
+misc d50dd30f Various / Ska Island
+.
+
+
+
+cddb query 820e770a 10 182 29035 58502 82970 108465 134520 150455 165772 189987 223380 3705
+200 jazz 820e770a Joshua Redman / Wish 1993

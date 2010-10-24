@@ -1,0 +1,1709 @@
+
+
+HTTP PROTOCOL RESPONSE:
+
+Searching for the CD in the CD-ROM drive:
+Array
+(
+    [0] => net_cddb_disc Object
+        (
+            [_tracks] => 
+            [_artist] => Shins
+            [_title] => Oh, Inverted World
+            [_discid] => 83085c0b
+            [_category] => misc
+            [_genre] => 
+            [_year] => 0
+            [_length] => 0
+            [_playorder] => 
+            [_revision] => 0
+            [_this_revision] => -1
+        )
+
+)
+
+
+Details for the first CD from the search are: 
+net_cddb_disc Object
+(
+    [_tracks] => Array
+        (
+            [0] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Caring Is Creepy
+                    [_offset] => 150
+                    [_length] => 0
+                )
+
+            [1] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => One By One All Day
+                    [_offset] => 15471
+                    [_length] => 0
+                )
+
+            [2] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Weird Divide
+                    [_offset] => 34414
+                    [_length] => 0
+                )
+
+            [3] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Know Your Onion!
+                    [_offset] => 43587
+                    [_length] => 0
+                )
+
+            [4] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Girl Inform Me
+                    [_offset] => 55098
+                    [_length] => 0
+                )
+
+            [5] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => New Slang
+                    [_offset] => 65975
+                    [_length] => 0
+                )
+
+            [6] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => The Celibate Life
+                    [_offset] => 83623
+                    [_length] => 0
+                )
+
+            [7] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Girl On The Wing
+                    [_offset] => 92225
+                    [_length] => 0
+                )
+
+            [8] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Your Algebra
+                    [_offset] => 105299
+                    [_length] => 0
+                )
+
+            [9] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Pressed In A Book
+                    [_offset] => 116339
+                    [_length] => 0
+                )
+
+            [10] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => The Past And Pending
+                    [_offset] => 129797
+                    [_length] => 0
+                )
+
+        )
+
+    [_artist] => Shins
+    [_title] => Oh, Inverted World
+    [_discid] => 83085c0b
+    [_category] => misc
+    [_genre] => misc
+    [_year] => 0
+    [_length] => 2142
+    [_playorder] => 
+    [_revision] => 0
+    [_this_revision] => -1
+)
+
+
+Dumping that disc back to a string looks like this: 
+# xcmd
+#
+# Track frame offsets:
+#    150
+#    15471
+#    34414
+#    43587
+#    55098
+#    65975
+#    83623
+#    92225
+#    105299
+#    116339
+#    129797
+#
+# Disc length: 2142 seconds
+#
+# Revision: 1
+# Submitted via: PHP/PEAR/Net_CDDB_Client 0.2.0
+#
+DISCID=83085c0b
+DTITLE=Shins / Oh, Inverted World
+DYEAR=0
+DGENRE=misc
+TTITLE0=Caring Is Creepy
+TTITLE1=One By One All Day
+TTITLE2=Weird Divide
+TTITLE3=Know Your Onion!
+TTITLE4=Girl Inform Me
+TTITLE5=New Slang
+TTITLE6=The Celibate Life
+TTITLE7=Girl On The Wing
+TTITLE8=Your Algebra
+TTITLE9=Pressed In A Book
+TTITLE10=The Past And Pending
+EXTD=
+EXTT0=
+EXTT1=
+EXTT2=
+EXTT3=
+EXTT4=
+EXTT5=
+EXTT6=
+EXTT7=
+EXTT8=
+EXTT9=
+EXTT10=
+PLAYORDER=
+
+Doing a test submit of that disc back to the CDDB server: 
+
+
+The CDDB music genres are: 
+Array
+(
+    [0] => data
+    [1] => folk
+    [2] => jazz
+    [3] => misc
+    [4] => rock
+    [5] => country
+    [6] => blues
+    [7] => newage
+    [8] => reggae
+    [9] => classical
+    [10] => soundtrack
+)
+
+
+The details for disk id: 'rock' '7708d309' are: 
+Array
+(
+    [DISCID] => 7708d309
+    [YEAR] => 1997
+    [CATEGORY] => 
+    [GENRE] => Rock
+    [ARTIST] => ABSU
+    [TITLE] => The Third Storm of Cythraul
+    [EXTENDED_DATA] => 
+    [TRACKS] => Array
+        (
+            [0] => Array
+                (
+                    [offset] => 150
+                    [title] => Prelusion To Cythraul Including ...And Shineth Unto The Cold Cometh
+                )
+
+            [1] => Array
+                (
+                    [offset] => 30752
+                    [title] => Highland Tyrant Attack
+                )
+
+            [2] => Array
+                (
+                    [offset] => 53155
+                    [title] => A Magician's Lapis-Lazuli
+                )
+
+            [3] => Array
+                (
+                    [offset] => 67275
+                    [title] => Swords And Leather
+                )
+
+            [4] => Array
+                (
+                    [offset] => 81334
+                    [title] => The Winter Zephyr (...Within Kingdoms Of Mist)
+                )
+
+            [5] => Array
+                (
+                    [offset] => 94787
+                    [title] => Morbid Scream
+                )
+
+            [6] => Array
+                (
+                    [offset] => 104555
+                    [title] => Customs Of Tasseomancy (Quoth The Sky, Nevermore) Act I
+                )
+
+            [7] => Array
+                (
+                    [offset] => 122390
+                    [title] => Intelligence Towards The Crown
+                )
+
+            [8] => Array
+                (
+                    [offset] => 131148
+                    [title] => ...Of Celtic Fire We Are Born Including Terminus (...In The Eyes Of Io ldanach)
+                )
+
+        )
+
+    [LENGTH] => 2261
+    [PLAYORDER] => 
+    [REVISION] => 2
+)
+
+
+The disc id for this record is: 
+d50dd30f
+
+Discs which match the description of that record are: 
+Array
+(
+    [0] => Array
+        (
+            [DISCID] => d50dd30f
+            [YEAR] => 0
+            [CATEGORY] => misc
+            [GENRE] => 
+            [ARTIST] => Various
+            [TITLE] => Ska Island
+            [EXTENDED_DATA] => 
+            [TRACKS] => Array
+                (
+                )
+
+            [LENGTH] => 0
+            [PLAYORDER] => 
+            [REVISION] => 0
+        )
+
+)
+
+
+CDDB server message of the day: 
+Welcome to freedb.org.
+You can find the freedb website at http://www.freedb.org
+If you have questions or suggestions write to info@freedb.org
+
+
+CDDB server protocol help: 
+The following commands are supported:
+
+CDDB <subcmd> (valid subcmds: HELLO LSCAT QUERY READ UNLINK WRITE)
+DISCID <ntrks> <off_1> <off_2> <...> <off_n> <nsecs>
+GET <file>
+HELP [command [subcmd]]
+LOG [-l lines] [get [-f flag]] [start_time [end_time]] | [day [days]]
+MOTD
+PROTO [level]
+PUT <file>
+QUIT
+SITES
+STAT
+UPDATE
+VALIDATE
+VER
+WHOM
+
+This is a CDDB protocol (CDDBP) CD Database Server, used for
+finding and retrieving CDDB format Compact Disc data.
+
+Cddbd, the "CD Database Server" copyright (c) 1996-1997 by 
+Steve Scherf. CDDB specification copyright (c) 1996-1997 by Ti Kan,
+portions copyright (c) 1996-1997 by Steve Scherf.
+Some modifications (c) 1999-2001 by various contributors.
+
+If you have questions or comments, send email to: info@freedb.org.
+
+
+CDDB server version is: 
+cddbd v1.5.1PL2 Copyright (c) 1996-2004 Steve Scherf et al.
+
+CDDB server statistics look like this: 
+Array
+(
+    [current_proto] => 5
+    [max_proto] => 6
+    [interface] => http
+    [gets] => no
+    [puts] => no
+    [updates] => no
+    [posting] => no
+    [validation] => accepted
+    [quotes] => yes
+    [strip_ext] => no
+    [secure] => no
+    [current_users] => 3
+    [max_users] => 100
+    [data] => 20244
+    [folk] => 145798
+    [jazz] => 114871
+    [misc] => 629576
+    [rock] => 564406
+    [country] => 53506
+    [blues] => 100549
+    [newage] => 73781
+    [reggae] => 25627
+    [classical] => 176207
+    [soundtrack] => 72671
+)
+
+
+CDDB server site list looks like this: 
+Array
+(
+    [0] => Array
+        (
+            [site] => freedb.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N000.00
+            [longitude] => W000.00
+            [description] => Random freedb server
+        )
+
+    [1] => Array
+        (
+            [site] => freedb.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N000.00
+            [longitude] => W000.00
+            [description] => Random freedb server
+        )
+
+    [2] => Array
+        (
+            [site] => at.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N048.13
+            [longitude] => E016.22
+            [description] => Vienna, Austria
+        )
+
+    [3] => Array
+        (
+            [site] => at.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N048.13
+            [longitude] => E016.22
+            [description] => Vienna, Austria
+        )
+
+    [4] => Array
+        (
+            [site] => au.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => S033.52
+            [longitude] => E151.13
+            [description] => Sydney, Australia
+        )
+
+    [5] => Array
+        (
+            [site] => au.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => S033.52
+            [longitude] => E151.13
+            [description] => Sydney, Australia
+        )
+
+    [6] => Array
+        (
+            [site] => ca.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N049.48
+            [longitude] => W097.08
+            [description] => Winnipeg, MB Canada
+        )
+
+    [7] => Array
+        (
+            [site] => ca.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N049.48
+            [longitude] => W097.08
+            [description] => Winnipeg, MB Canada
+        )
+
+    [8] => Array
+        (
+            [site] => es.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N040.30
+            [longitude] => W003.48
+            [description] => Madrid, Spain
+        )
+
+    [9] => Array
+        (
+            [site] => es.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N040.30
+            [longitude] => W003.48
+            [description] => Madrid, Spain
+        )
+
+    [10] => Array
+        (
+            [site] => fi.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N061.30
+            [longitude] => E023.42
+            [description] => Tampere, Finland
+        )
+
+    [11] => Array
+        (
+            [site] => fi.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N061.30
+            [longitude] => E023.42
+            [description] => Tampere, Finland
+        )
+
+    [12] => Array
+        (
+            [site] => fr.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N048.53
+            [longitude] => E002.15
+            [description] => Courbevoie, France
+        )
+
+    [13] => Array
+        (
+            [site] => fr.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N048.53
+            [longitude] => E002.15
+            [description] => Courbevoie, France
+        )
+
+    [14] => Array
+        (
+            [site] => jp.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N034.58
+            [longitude] => E138.22
+            [description] => Shizuoka, Shizuoka, Japan
+        )
+
+    [15] => Array
+        (
+            [site] => jp.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N034.58
+            [longitude] => E138.22
+            [description] => Shizuoka, Shizuoka, Japan
+        )
+
+    [16] => Array
+        (
+            [site] => jp2.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N035.41
+            [longitude] => E139.45
+            [description] => Tokyo, Tokyo, Japan
+        )
+
+    [17] => Array
+        (
+            [site] => jp2.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N035.41
+            [longitude] => E139.45
+            [description] => Tokyo, Tokyo, Japan
+        )
+
+    [18] => Array
+        (
+            [site] => ru.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N059.55
+            [longitude] => E030.15
+            [description] => Saint-Petersburg, Russia
+        )
+
+    [19] => Array
+        (
+            [site] => ru.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N059.55
+            [longitude] => E030.15
+            [description] => Saint-Petersburg, Russia
+        )
+
+    [20] => Array
+        (
+            [site] => uk.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N051.49
+            [longitude] => W000.01
+            [description] => London, UK
+        )
+
+    [21] => Array
+        (
+            [site] => uk.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N051.49
+            [longitude] => W000.01
+            [description] => London, UK
+        )
+
+    [22] => Array
+        (
+            [site] => uk2.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N051.30
+            [longitude] => W000.00
+            [description] => London, UK
+        )
+
+    [23] => Array
+        (
+            [site] => uk2.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N051.30
+            [longitude] => W000.00
+            [description] => London, UK
+        )
+
+    [24] => Array
+        (
+            [site] => us.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N037.21
+            [longitude] => W121.55
+            [description] => San Jose, CA USA
+        )
+
+    [25] => Array
+        (
+            [site] => us.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N037.21
+            [longitude] => W121.55
+            [description] => San Jose, CA USA
+        )
+
+)
+
+
+
+
+CDDBP PROTOCOL RESPONSE:
+
+Searching for the CD in the CD-ROM drive:
+Array
+(
+    [0] => net_cddb_disc Object
+        (
+            [_tracks] => 
+            [_artist] => Shins
+            [_title] => Oh, Inverted World
+            [_discid] => 83085c0b
+            [_category] => misc
+            [_genre] => 
+            [_year] => 0
+            [_length] => 0
+            [_playorder] => 
+            [_revision] => 0
+            [_this_revision] => -1
+        )
+
+)
+
+
+Details for the first CD from the search are: 
+net_cddb_disc Object
+(
+    [_tracks] => Array
+        (
+            [0] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Caring Is Creepy
+                    [_offset] => 150
+                    [_length] => 0
+                )
+
+            [1] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => One By One All Day
+                    [_offset] => 15471
+                    [_length] => 0
+                )
+
+            [2] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Weird Divide
+                    [_offset] => 34414
+                    [_length] => 0
+                )
+
+            [3] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Know Your Onion!
+                    [_offset] => 43587
+                    [_length] => 0
+                )
+
+            [4] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Girl Inform Me
+                    [_offset] => 55098
+                    [_length] => 0
+                )
+
+            [5] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => New Slang
+                    [_offset] => 65975
+                    [_length] => 0
+                )
+
+            [6] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => The Celibate Life
+                    [_offset] => 83623
+                    [_length] => 0
+                )
+
+            [7] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Girl On The Wing
+                    [_offset] => 92225
+                    [_length] => 0
+                )
+
+            [8] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Your Algebra
+                    [_offset] => 105299
+                    [_length] => 0
+                )
+
+            [9] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Pressed In A Book
+                    [_offset] => 116339
+                    [_length] => 0
+                )
+
+            [10] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => The Past And Pending
+                    [_offset] => 129797
+                    [_length] => 0
+                )
+
+        )
+
+    [_artist] => Shins
+    [_title] => Oh, Inverted World
+    [_discid] => 83085c0b
+    [_category] => misc
+    [_genre] => misc
+    [_year] => 0
+    [_length] => 2142
+    [_playorder] => 
+    [_revision] => 0
+    [_this_revision] => -1
+)
+
+
+Dumping that disc back to a string looks like this: 
+# xcmd
+#
+# Track frame offsets:
+#    150
+#    15471
+#    34414
+#    43587
+#    55098
+#    65975
+#    83623
+#    92225
+#    105299
+#    116339
+#    129797
+#
+# Disc length: 2142 seconds
+#
+# Revision: 1
+# Submitted via: PHP/PEAR/Net_CDDB_Client 0.2.0
+#
+DISCID=83085c0b
+DTITLE=Shins / Oh, Inverted World
+DYEAR=0
+DGENRE=misc
+TTITLE0=Caring Is Creepy
+TTITLE1=One By One All Day
+TTITLE2=Weird Divide
+TTITLE3=Know Your Onion!
+TTITLE4=Girl Inform Me
+TTITLE5=New Slang
+TTITLE6=The Celibate Life
+TTITLE7=Girl On The Wing
+TTITLE8=Your Algebra
+TTITLE9=Pressed In A Book
+TTITLE10=The Past And Pending
+EXTD=
+EXTT0=
+EXTT1=
+EXTT2=
+EXTT3=
+EXTT4=
+EXTT5=
+EXTT6=
+EXTT7=
+EXTT8=
+EXTT9=
+EXTT10=
+PLAYORDER=
+
+Doing a test submit of that disc back to the CDDB server: 
+
+
+The CDDB music genres are: 
+Array
+(
+    [0] => data
+    [1] => folk
+    [2] => jazz
+    [3] => misc
+    [4] => rock
+    [5] => country
+    [6] => blues
+    [7] => newage
+    [8] => reggae
+    [9] => classical
+    [10] => soundtrack
+)
+
+
+The details for disk id: 'rock' '7708d309' are: 
+Array
+(
+    [DISCID] => 7708d309
+    [YEAR] => 1997
+    [CATEGORY] => 
+    [GENRE] => Rock
+    [ARTIST] => ABSU
+    [TITLE] => The Third Storm of Cythraul
+    [EXTENDED_DATA] => 
+    [TRACKS] => Array
+        (
+            [0] => Array
+                (
+                    [offset] => 150
+                    [title] => Prelusion To Cythraul Including ...And Shineth Unto The Cold Cometh
+                )
+
+            [1] => Array
+                (
+                    [offset] => 30752
+                    [title] => Highland Tyrant Attack
+                )
+
+            [2] => Array
+                (
+                    [offset] => 53155
+                    [title] => A Magician's Lapis-Lazuli
+                )
+
+            [3] => Array
+                (
+                    [offset] => 67275
+                    [title] => Swords And Leather
+                )
+
+            [4] => Array
+                (
+                    [offset] => 81334
+                    [title] => The Winter Zephyr (...Within Kingdoms Of Mist)
+                )
+
+            [5] => Array
+                (
+                    [offset] => 94787
+                    [title] => Morbid Scream
+                )
+
+            [6] => Array
+                (
+                    [offset] => 104555
+                    [title] => Customs Of Tasseomancy (Quoth The Sky, Nevermore) Act I
+                )
+
+            [7] => Array
+                (
+                    [offset] => 122390
+                    [title] => Intelligence Towards The Crown
+                )
+
+            [8] => Array
+                (
+                    [offset] => 131148
+                    [title] => ...Of Celtic Fire We Are Born Including Terminus (...In The Eyes Of Io ldanach)
+                )
+
+        )
+
+    [LENGTH] => 2261
+    [PLAYORDER] => 
+    [REVISION] => 2
+)
+
+
+The disc id for this record is: 
+d50dd30f
+
+Discs which match the description of that record are: 
+Array
+(
+    [0] => Array
+        (
+            [DISCID] => d50dd30f
+            [YEAR] => 0
+            [CATEGORY] => misc
+            [GENRE] => 
+            [ARTIST] => Various
+            [TITLE] => Ska Island
+            [EXTENDED_DATA] => 
+            [TRACKS] => Array
+                (
+                )
+
+            [LENGTH] => 0
+            [PLAYORDER] => 
+            [REVISION] => 0
+        )
+
+)
+
+
+CDDB server message of the day: 
+Welcome to freedb.org.
+You can find the freedb website at http://www.freedb.org
+If you have questions or suggestions write to info@freedb.org
+
+CDDB server protocol help: 
+The following commands are supported:
+
+CDDB <subcmd> (valid subcmds: HELLO LSCAT QUERY READ UNLINK WRITE)
+DISCID <ntrks> <off_1> <off_2> <...> <off_n> <nsecs>
+GET <file>
+HELP [command [subcmd]]
+LOG [-l lines] [get [-f flag]] [start_time [end_time]] | [day [days]]
+MOTD
+PROTO [level]
+PUT <file>
+QUIT
+SITES
+STAT
+UPDATE
+VALIDATE
+VER
+WHOM
+
+This is a CDDB protocol (CDDBP) CD Database Server, used for
+finding and retrieving CDDB format Compact Disc data.
+
+Cddbd, the "CD Database Server" copyright (c) 1996-1997 by 
+Steve Scherf. CDDB specification copyright (c) 1996-1997 by Ti Kan,
+portions copyright (c) 1996-1997 by Steve Scherf.
+Some modifications (c) 1999-2001 by various contributors.
+
+If you have questions or comments, send email to: info@freedb.org
+
+CDDB server version is: 
+cddbd v1.5.1PL2 Copyright (c) 1996-2004 Steve Scherf et al.
+
+CDDB server statistics look like this: 
+Array
+(
+    [current_proto] => 5
+    [max_proto] => 6
+    [interface] => cddbp
+    [gets] => no
+    [puts] => no
+    [updates] => no
+    [posting] => no
+    [validation] => accepted
+    [quotes] => yes
+    [strip_ext] => no
+    [secure] => yes
+    [current_users] => 3
+    [max_users] => 100
+    [data] => 20244
+    [folk] => 145798
+    [jazz] => 114871
+    [misc] => 629576
+    [rock] => 564406
+    [country] => 53506
+    [blues] => 100549
+    [newage] => 73781
+    [reggae] => 25627
+    [classical] => 176207
+    [soundtrack] => 72671
+)
+
+
+CDDB server site list looks like this: 
+Array
+(
+    [0] => Array
+        (
+            [site] => freedb.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N000.00
+            [longitude] => W000.00
+            [description] => Random freedb server
+        )
+
+    [1] => Array
+        (
+            [site] => freedb.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N000.00
+            [longitude] => W000.00
+            [description] => Random freedb server
+        )
+
+    [2] => Array
+        (
+            [site] => at.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N048.13
+            [longitude] => E016.22
+            [description] => Vienna, Austria
+        )
+
+    [3] => Array
+        (
+            [site] => at.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N048.13
+            [longitude] => E016.22
+            [description] => Vienna, Austria
+        )
+
+    [4] => Array
+        (
+            [site] => au.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => S033.52
+            [longitude] => E151.13
+            [description] => Sydney, Australia
+        )
+
+    [5] => Array
+        (
+            [site] => au.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => S033.52
+            [longitude] => E151.13
+            [description] => Sydney, Australia
+        )
+
+    [6] => Array
+        (
+            [site] => ca.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N049.48
+            [longitude] => W097.08
+            [description] => Winnipeg, MB Canada
+        )
+
+    [7] => Array
+        (
+            [site] => ca.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N049.48
+            [longitude] => W097.08
+            [description] => Winnipeg, MB Canada
+        )
+
+    [8] => Array
+        (
+            [site] => es.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N040.30
+            [longitude] => W003.48
+            [description] => Madrid, Spain
+        )
+
+    [9] => Array
+        (
+            [site] => es.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N040.30
+            [longitude] => W003.48
+            [description] => Madrid, Spain
+        )
+
+    [10] => Array
+        (
+            [site] => fi.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N061.30
+            [longitude] => E023.42
+            [description] => Tampere, Finland
+        )
+
+    [11] => Array
+        (
+            [site] => fi.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N061.30
+            [longitude] => E023.42
+            [description] => Tampere, Finland
+        )
+
+    [12] => Array
+        (
+            [site] => fr.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N048.53
+            [longitude] => E002.15
+            [description] => Courbevoie, France
+        )
+
+    [13] => Array
+        (
+            [site] => fr.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N048.53
+            [longitude] => E002.15
+            [description] => Courbevoie, France
+        )
+
+    [14] => Array
+        (
+            [site] => jp.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N034.58
+            [longitude] => E138.22
+            [description] => Shizuoka, Shizuoka, Japan
+        )
+
+    [15] => Array
+        (
+            [site] => jp.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N034.58
+            [longitude] => E138.22
+            [description] => Shizuoka, Shizuoka, Japan
+        )
+
+    [16] => Array
+        (
+            [site] => jp2.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N035.41
+            [longitude] => E139.45
+            [description] => Tokyo, Tokyo, Japan
+        )
+
+    [17] => Array
+        (
+            [site] => jp2.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N035.41
+            [longitude] => E139.45
+            [description] => Tokyo, Tokyo, Japan
+        )
+
+    [18] => Array
+        (
+            [site] => ru.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N059.55
+            [longitude] => E030.15
+            [description] => Saint-Petersburg, Russia
+        )
+
+    [19] => Array
+        (
+            [site] => ru.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N059.55
+            [longitude] => E030.15
+            [description] => Saint-Petersburg, Russia
+        )
+
+    [20] => Array
+        (
+            [site] => uk.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N051.49
+            [longitude] => W000.01
+            [description] => London, UK
+        )
+
+    [21] => Array
+        (
+            [site] => uk.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N051.49
+            [longitude] => W000.01
+            [description] => London, UK
+        )
+
+    [22] => Array
+        (
+            [site] => uk2.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N051.30
+            [longitude] => W000.00
+            [description] => London, UK
+        )
+
+    [23] => Array
+        (
+            [site] => uk2.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N051.30
+            [longitude] => W000.00
+            [description] => London, UK
+        )
+
+    [24] => Array
+        (
+            [site] => us.freedb.org
+            [protocol] => cddbp
+            [port] => 8880
+            [address] => -
+            [latitude] => N037.21
+            [longitude] => W121.55
+            [description] => San Jose, CA USA
+        )
+
+    [25] => Array
+        (
+            [site] => us.freedb.org
+            [protocol] => http
+            [port] => 80
+            [address] => /~cddb/cddb.cgi
+            [latitude] => N037.21
+            [longitude] => W121.55
+            [description] => San Jose, CA USA
+        )
+
+)
+
+
+
+
+FILESYSTEM PROTOCOL RESPONSE:
+
+Searching for the CD in the CD-ROM drive:
+Array
+(
+    [0] => net_cddb_disc Object
+        (
+            [_tracks] => 
+            [_artist] => Shins
+            [_title] => Oh, Inverted World
+            [_discid] => 83085c0b
+            [_category] => misc
+            [_genre] => 
+            [_year] => 0
+            [_length] => 0
+            [_playorder] => 
+            [_revision] => 0
+            [_this_revision] => -1
+        )
+
+)
+
+
+Details for the first CD from the search are: 
+net_cddb_disc Object
+(
+    [_tracks] => Array
+        (
+            [0] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Caring Is Creepy
+                    [_offset] => 150
+                    [_length] => 0
+                )
+
+            [1] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => One By One All Day
+                    [_offset] => 15471
+                    [_length] => 0
+                )
+
+            [2] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Weird Divide
+                    [_offset] => 34414
+                    [_length] => 0
+                )
+
+            [3] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Know Your Onion!
+                    [_offset] => 43587
+                    [_length] => 0
+                )
+
+            [4] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Girl Inform Me
+                    [_offset] => 55098
+                    [_length] => 0
+                )
+
+            [5] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => New Slang
+                    [_offset] => 65975
+                    [_length] => 0
+                )
+
+            [6] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => The Celibate Life
+                    [_offset] => 83623
+                    [_length] => 0
+                )
+
+            [7] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Girl On The Wing
+                    [_offset] => 92225
+                    [_length] => 0
+                )
+
+            [8] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Your Algebra
+                    [_offset] => 105299
+                    [_length] => 0
+                )
+
+            [9] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => Pressed In A Book
+                    [_offset] => 116339
+                    [_length] => 0
+                )
+
+            [10] => net_cddb_track Object
+                (
+                    [_extra] => 
+                    [_title] => The Past And Pending
+                    [_offset] => 129797
+                    [_length] => 0
+                )
+
+        )
+
+    [_artist] => Shins
+    [_title] => Oh, Inverted World
+    [_discid] => 83085c0b
+    [_category] => misc
+    [_genre] => misc
+    [_year] => 0
+    [_length] => 2142
+    [_playorder] => 
+    [_revision] => 0
+    [_this_revision] => -1
+)
+
+
+Dumping that disc back to a string looks like this: 
+# xcmd
+#
+# Track frame offsets:
+#    150
+#    15471
+#    34414
+#    43587
+#    55098
+#    65975
+#    83623
+#    92225
+#    105299
+#    116339
+#    129797
+#
+# Disc length: 2142 seconds
+#
+# Revision: 1
+# Submitted via: PHP/PEAR/Net_CDDB_Client 0.2.0
+#
+DISCID=83085c0b
+DTITLE=Shins / Oh, Inverted World
+DYEAR=0
+DGENRE=misc
+TTITLE0=Caring Is Creepy
+TTITLE1=One By One All Day
+TTITLE2=Weird Divide
+TTITLE3=Know Your Onion!
+TTITLE4=Girl Inform Me
+TTITLE5=New Slang
+TTITLE6=The Celibate Life
+TTITLE7=Girl On The Wing
+TTITLE8=Your Algebra
+TTITLE9=Pressed In A Book
+TTITLE10=The Past And Pending
+EXTD=
+EXTT0=
+EXTT1=
+EXTT2=
+EXTT3=
+EXTT4=
+EXTT5=
+EXTT6=
+EXTT7=
+EXTT8=
+EXTT9=
+EXTT10=
+PLAYORDER=
+
+Doing a test submit of that disc back to the CDDB server: 
+
+
+The CDDB music genres are: 
+Array
+(
+    [0] => blues
+    [1] => classical
+    [2] => country
+    [3] => data
+    [4] => folk
+    [5] => jazz
+    [6] => misc
+    [7] => newage
+    [8] => reggae
+    [9] => rock
+    [10] => soundtrack
+)
+
+
+The details for disk id: 'rock' '7708d309' are: 
+Array
+(
+    [DISCID] => 7708d309
+    [YEAR] => 1997
+    [CATEGORY] => 
+    [GENRE] => Rock
+    [ARTIST] => ABSU
+    [TITLE] => The Third Storm of Cythraul
+    [EXTENDED_DATA] => 
+    [TRACKS] => Array
+        (
+            [0] => Array
+                (
+                    [offset] => 150
+                    [title] => Prelusion To Cythraul Including ...And Shineth Unto The Cold Cometh
+                )
+
+            [1] => Array
+                (
+                    [offset] => 30752
+                    [title] => Highland Tyrant Attack
+                )
+
+            [2] => Array
+                (
+                    [offset] => 53155
+                    [title] => A Magician's Lapis-Lazuli
+                )
+
+            [3] => Array
+                (
+                    [offset] => 67275
+                    [title] => Swords And Leather
+                )
+
+            [4] => Array
+                (
+                    [offset] => 81334
+                    [title] => The Winter Zephyr (...Within Kingdoms Of Mist)
+                )
+
+            [5] => Array
+                (
+                    [offset] => 94787
+                    [title] => Morbid Scream
+                )
+
+            [6] => Array
+                (
+                    [offset] => 104555
+                    [title] => Customs Of Tasseomancy (Quoth The Sky, Nevermore) Act I
+                )
+
+            [7] => Array
+                (
+                    [offset] => 122390
+                    [title] => Intelligence Towards The Crown
+                )
+
+            [8] => Array
+                (
+                    [offset] => 131148
+                    [title] => ...Of Celtic Fire We Are Born Including Terminus (...In The Eyes Of Io ldanach)
+                )
+
+        )
+
+    [LENGTH] => 2261
+    [PLAYORDER] => 
+    [REVISION] => 2
+)
+
+
+The disc id for this record is: 
+d50dd30f
+
+Discs which match the description of that record are: 
+Array
+(
+    [0] => Array
+        (
+            [DISCID] => d50dd30f
+            [YEAR] => 0
+            [CATEGORY] => misc
+            [GENRE] => 
+            [ARTIST] => Various
+            [TITLE] => Ska Island
+            [EXTENDED_DATA] => 
+            [TRACKS] => Array
+                (
+                )
+
+            [LENGTH] => 0
+            [PLAYORDER] => 
+            [REVISION] => 0
+        )
+
+    [1] => Array
+        (
+            [DISCID] => d50dd30f
+            [YEAR] => 0
+            [CATEGORY] => reggae
+            [GENRE] => 
+            [ARTIST] => Various
+            [TITLE] => Ska Island
+            [EXTENDED_DATA] => 
+            [TRACKS] => Array
+                (
+                )
+
+            [LENGTH] => 0
+            [PLAYORDER] => 
+            [REVISION] => 0
+        )
+
+)
+
+
+CDDB server message of the day: 
+message of the day, yeah!
+
+
+CDDB server protocol help: 
+
+
+CDDB server version is: 
+PHP/PEAR/net_cddb_protocol_filesystem v0.2.0 Copyright (c) 2006-2006 Keith Palmer Jr.
+
+CDDB server statistics look like this: 
+total: 1855978.: 15
+..: 9
+blues: 96703
+classical: 160019
+country: 48409
+data: 18973
+folk: 132230
+jazz: 107250
+misc: 594640
+newage: 71133
+reggae: 23735
+rock: 536190
+soundtrack: 66672
+Array
+(
+    [current_proto] => 5
+    [max_proto] => 5
+    [interface] => filesystem
+    [gets] => no
+    [puts] => no
+    [updates] => no
+    [posting] => no
+    [validation] => accepted
+    [quotes] => no
+    [strip_ext] => no
+    [secure] => yes
+    [current_users] => 1
+    [max_users] => 100
+    [blues] => 96703
+    [classical] => 160019
+    [country] => 48409
+    [data] => 18973
+    [folk] => 132230
+    [jazz] => 107250
+    [misc] => 594640
+    [newage] => 71133
+    [reggae] => 23735
+    [rock] => 536190
+    [soundtrack] => 66672
+)
+
+
+CDDB server site list looks like this: 
+Array
+(
+)
+
+
