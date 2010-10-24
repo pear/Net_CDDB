@@ -38,7 +38,7 @@ require_once 'Net/CDDB/Utilities.php';
  * 
  * @var string
  */
-define('NET_CDDB_VERSION', '0.3.0');
+define('NET_CDDB_VERSION', '0.4.0');
 
 /**
  * CDDB protocol level ***DO NOT CHANGE THIS***
@@ -202,159 +202,159 @@ define('NET_CDDB_REQUEST_ONCE', 'once');
 */
 class Net_CDDB
 {
-	/**
-	 * Status of debugging (enabled/disabled)
-	 * 
-	 * @var bool
-	 * @access protected
-	 */
-	var $_debug;
-	
-	/**
-	 * Enables or disables debugging ( prints out all responses/requests )
-	 * 
-	 * @access public
-	 * 
-	 * @param bool $true_or_false
-	 */
-	function debug($true_or_false)
-	{
-		$this->_debug = $true_or_false;
-	}
-	
-	/**
-	 * Prints/logs debugging messages
-	 * 
-	 * @access protected
-	 * 
-	 * @param string $msg The debugging message
-	 * 
-	 * @return void
-	 */
-	function _debug($msg)
-	{
-		if ($this->_debug) {
-			print(date('Y-m-d H:i:s') . ': ' . $msg . "\n");
-		}
-	}
-	
-	/**
-	 * Parse a CDDB style database record into an array
-	 * 
-	 * @see Net_CDDB::_parseResult()
-	 * @uses Net_CDDB_Utilities::parseRecord()
-	 * 
-	 * @access protected
-	 * 
-	 * @param string $str
-	 * @param string $category
-	 * @return array 
-	 */
-	function _parseRecord($str, $category = '')
-	{
-		return Net_CDDB_Utilities::parseRecord($str, $category);
-	}
-	
-	/**
-	 * Parse a result string returned by a CDDB query into an array
-	 * 
-	 * @see Net_CDDB::_parseRecord()
-	 * 
-	 * @access protected
-	 * 
-	 * @param string $str
-	 * @return array 
-	 */
-	function _parseResult($str)
-	{
-		$first_space = strpos($str, ' ');
-		$second_space = strpos($str, ' ', $first_space + 1);
-		
-		$category = substr($str, 0, $first_space);
-		$discid = substr($str, $first_space, $second_space - $first_space);
-		$artist_and_title = substr($str, $second_space);
-		
-		$str = '';
-		$str .= 'DISCID=' . $discid . "\n";
-		$str .= 'DTITLE=' . $artist_and_title;
-		
-		return Net_CDDB_Utilities::parseRecord($str, $category);
-	}
-	
-	/**
-	 * Calculate a disc ID based on the track offsets and the disc length
-	 * 
-	 * @uses Net_CDDB_Utilities::calculateDiscId()
-	 * 
-	 * @param array $track_offsets The offsets of the tracks on the CD
-	 * @param int $length The total number of seconds for the disc
-	 * @return string 8-character disc ID value
-	 */
-	function calculateDiscId($track_offsets, $length)
-	{
-		/*
-		$query = 'discid ' . count($track_offsets) . ' ';
-		
-		foreach ($track_offsets as $track => $track_offset) {
-			$query = $query . $track_offset . ' ';
-		}
-		
-		$query = $query . $length;
-		
-		$this->_send($query);
-		
-		switch($this->_readResponseStatus()) {
-			case NET_CDDB_RESPONSE_OK: // 200, OK
-				return substr(trim($this->_buffer), -8, 8);
-			case NET_CDDB_RESPONSE_ERROR_SYNTAX: // 500, Syntax error
-			default:
-				return false;
-		}
-		*/
-		
-		return Net_CDDB_Utilities::calculateDiscId($track_offsets, $length);
-	}
-	
-	/**
-	 * Create a protocol instance of the given type with the given parameters
-	 * 
-	 * Creates a protocol object instance of a given type by protocol type. 
-	 * The array of connection parameters will be passed directly to the protocol 
-	 * instance. 
-	 * 
-	 * @see Net_CDDB_Client
-	 * @see Net_CDDB_Server
-	 * @see Net_CDDB_Client::_createReader()
-	 * 
-	 * @access public
-	 * 
-	 * @param string $type
-	 * @param array $params
-	 * @return object
-	 */
-	function _createProtocol($dsn, $options)
-	{
-		$parse = parse_url(str_replace(':///', '://null/', $dsn));
-		
-		if (false !== ($pos = strpos($parse['scheme'], '.'))) {
-			$parse['scheme'] = substr($parse['scheme'], 0, $pos);
-			$dsn = substr($dsn, $pos + 1);
-		}
-		
-		$file = ucfirst(strtolower($parse['scheme']));
-		$class = 'Net_CDDB_Protocol_' . $file;
-		
-		/**
-		 * Require the file the protocol class is stored in
-		 */
-		include_once 'Net/CDDB/Protocol/' . $file . '.php';
-		
-		if (class_exists($class)) {
-			return new $class($dsn, $options);
-		} else {
-			return PEAR::raiseError('Could not find protocol file for: ' . $file);
-		}
-	}
-}
+    /**
+     * Status of debugging (enabled/disabled)
+     * 
+     * @var bool
+     * @access protected
+     */
+    var $_debug;
+    
+    /**
+     * Enables or disables debugging ( prints out all responses/requests )
+     * 
+     * @access public
+     * 
+     * @todo Inject a log instead?
+     * @param bool $true_or_false
+     */
+    function debug($true_or_false)
+    {
+        $this->_debug = $true_or_false;
+    }
+    
+    /**
+     * Prints/logs debugging messages
+     * 
+     * @access protected
+     * 
+     * @param string $msg The debugging message
+     * 
+     * @return void
+     */
+    function _debug($msg)
+    {
+        if ($this->_debug) {
+            print(date('Y-m-d H:i:s') . ': ' . $msg . "\n");
+        }
+    }
+    
+    /**
+     * Parse a CDDB style database record into an array
+     * 
+     * @todo Inject utilities instead?
+     * @see Net_CDDB::_parseResult()
+     * @uses Net_CDDB_Utilities::parseRecord()
+     * 
+     * @access protected
+     * 
+     * @param string $str
+     * @param string $category
+     * @return array 
+     */
+    function _parseRecord($str, $category = '')
+    {
+        return Net_CDDB_Utilities::parseRecord($str, $category);
+    }
+    
+    /**
+     * Parse a result string returned by a CDDB query into an array
+     * 
+     * @see Net_CDDB::_parseRecord()
+     * 
+     * @access protected
+     * 
+     * @param string $str
+     * @return array 
+     */
+    function _parseResult($str)
+    {
+        $first_space = strpos($str, ' ');
+        $second_space = strpos($str, ' ', $first_space + 1);
+        
+        $category = substr($str, 0, $first_space);
+        $discid = substr($str, $first_space, $second_space - $first_space);
+        $artist_and_title = substr($str, $second_space);
+        
+        $str = '';
+        $str .= 'DISCID=' . $discid . "\n";
+        $str .= 'DTITLE=' . $artist_and_title;
+        
+        return Net_CDDB_Utilities::parseRecord($str, $category);
+    }
+    
+    /**
+     * Calculate a disc ID based on the track offsets and the disc length
+     * 
+     * @uses Net_CDDB_Utilities::calculateDiscId()
+     * 
+     * @param array $track_offsets The offsets of the tracks on the CD
+     * @param int $length The total number of seconds for the disc
+     * @return string 8-character disc ID value
+     */
+    function calculateDiscId($track_offsets, $length)
+    {
+        /*
+        $query = 'discid ' . count($track_offsets) . ' ';
+        
+        foreach ($track_offsets as $track => $track_offset) {
+            $query = $query . $track_offset . ' ';
+        }
+        
+        $query = $query . $length;
+        
+        $this->_send($query);
+        
+        switch($this->_readResponseStatus()) {
+            case NET_CDDB_RESPONSE_OK: // 200, OK
+                return substr(trim($this->_buffer), -8, 8);
+            case NET_CDDB_RESPONSE_ERROR_SYNTAX: // 500, Syntax error
+            default:
+                return false;
+        }
+        */
+        
+        return Net_CDDB_Utilities::calculateDiscId($track_offsets, $length);
+    }
+    
+    /**
+     * Create a protocol instance of the given type with the given parameters
+     * 
+     * Creates a protocol object instance of a given type by protocol type. 
+     * The array of connection parameters will be passed directly to the protocol 
+     * instance. 
+     * 
+     * @see Net_CDDB_Client
+     * @see Net_CDDB_Server
+     * @see Net_CDDB_Client::_createReader()
+     * 
+     * @access public
+     * 
+     * @param string $type
+     * @param array $params
+     * @return object
+     */
+    function _createProtocol($dsn, $options)
+    {
+        $parse = parse_url(str_replace(':///', '://null/', $dsn));
+        
+        if (false !== ($pos = strpos($parse['scheme'], '.'))) {
+            $parse['scheme'] = substr($parse['scheme'], 0, $pos);
+            $dsn = substr($dsn, $pos + 1);
+        }
+        
+        $file = ucfirst(strtolower($parse['scheme']));
+        $class = 'Net_CDDB_Protocol_' . $file;
+        
+        /**
+         * Require the file the protocol class is stored in
+         */
+        include_once 'Net/CDDB/Protocol/' . $file . '.php';
+        
+        if (class_exists($class)) {
+            return new $class($dsn, $options);
+        }
 
-?>
+        throw new Exception('Could not find protocol file for: ' . $file);
+    }
+}
