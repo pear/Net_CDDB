@@ -27,17 +27,17 @@
  */
 class Net_CDDB_Request
 {
-	/**
-	 * Define the mode the server listens in (listen for a single request, HTTP style, or listen for multiple requests, CDDBD style)
-	 * 
-	 * @access public
-	 * 
-	 * @return string
-	 */
-	function mode()
-	{
-		return NET_CDDB_REQUEST_ONCE;
-	}
+    /**
+     * Define the mode the server listens in (listen for a single request, HTTP style, or listen for multiple requests, CDDBD style)
+     * 
+     * @access public
+     * 
+     * @return string
+     */
+    function mode()
+    {
+        return NET_CDDB_REQUEST_ONCE;
+    }
 }
 
 ?>
