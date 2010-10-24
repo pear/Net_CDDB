@@ -33,6 +33,8 @@ require_once 'PEAR.php';
  */
 require_once 'Net/CDDB/Utilities.php';
 
+require_once 'Net/CDDB/Exception.php';
+
 /**
  * Net_CDDB PEAR package version
  * 
@@ -355,6 +357,6 @@ class Net_CDDB
             return new $class($dsn, $options);
         }
 
-        throw new Exception('Could not find protocol file for: ' . $file);
+        throw new Net_CDDB_Exception('Could not find protocol file for: ' . $file);
     }
 }

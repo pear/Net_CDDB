@@ -142,7 +142,7 @@ class Net_CDDB_Protocol_Mdb2 extends Net_CDDB_Protocol
     {
         $connection = MDB2::factory($this->_dsn, $this->_options);
         if (MDB2::isError($connection)) {
-            throw new Exception($connection->getMessage());
+            throw new Net_CDDB_Exception($connection->getMessage());
         }
         $this->_mdb2 = $connection;
         $this->_mdb2->setFetchMode(MDB2_FETCHMODE_ASSOC);

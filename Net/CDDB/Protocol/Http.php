@@ -188,7 +188,7 @@ class Net_CDDB_Protocol_HTTP extends Net_CDDB_Protocol
         $request->addPostData('proto', NET_CDDB_PROTO_LEVEL);
         
         if (PEAR::isError($err = $request->sendRequest())) {
-            throw new Exception('HTTP request failed, HTTP_Request object said: ' . $err->getMessage());
+            throw new Net_CDDB_Exception('HTTP request failed, HTTP_Request object said: ' . $err->getMessage());
         }
         
         $response = trim($request->getResponseBody());
