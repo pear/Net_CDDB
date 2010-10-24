@@ -156,18 +156,6 @@ class Net_CDDB_Protocol_Filesystem extends Net_CDDB_Protocol
     var $_status_buffer;
     
     /**
-     * Constructor (PHP v4.x)
-     * 
-     * @access public
-     * 
-     * @see Net_CDDB_Protocol_Filesystem::__construct()
-     */
-    function Net_CDDB_Protocol_Filesystem($dsn = 'filesystem:///FreeDB', $options)
-    {
-        $this->__construct($dsn, $options);
-    }
-    
-    /**
      * Constructor (PHP v5.x)
      * 
      * @access public

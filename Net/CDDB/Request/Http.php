@@ -31,18 +31,9 @@ require_once 'Net/CDDB/Request.php';
  * 
  * @package Net_CDDB
  */
-class Net_CDDB_Request_HTTP extends Net_CDDB_Request
+class Net_CDDB_Request_Http extends Net_CDDB_Request
 {
-    /**
-     * Constructor (PHP v4.x)
-     * 
-     * @see __construct()
-     */
-    function Net_CDDB_Request_HTTP($dsn, $options = array())
-    {
-        $this->__construct($dsn, $options);
-    }
-    
+
     /**
      * Constructor (PHP v5.x)
      * 

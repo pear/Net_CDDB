@@ -165,17 +165,6 @@ class Net_CDDB_Server extends Net_CDDB
     var $_hook_resp;
     
     /**
-     * Constructor (PHP v4.x)
-     * 
-     * @access public
-     * @see Net_CDDB_Server::__construct()
-     */
-    function Net_CDDB_Server($request_dsn, $protocol_dsn, $options = array())
-    {
-        $this->__construct($request_dsn, $protocol_dsn, $options);
-    }
-    
-    /**
      * Constructor (PHP v5.x)
      * 
      * @access public

@@ -120,16 +120,6 @@ class Net_CDDB_Client extends Net_CDDB
     var $_email;
     
     /**
-     * Construct a new Net_CDDB_Client object using the given backend/connection parameters (PHP v4.x)
-     * 
-     * @see Net_CDDB_Client::__construct()
-     */
-    function Net_CDDB_Client($protocol = 'cddbp://freedb.org:8880', $cdreader = 'cddiscid:///dev/acd0', $option_params = array())
-    {
-        $this->__construct($protocol, $cdreader, $option_params);
-    }
-    
-    /**
      * Construct a new CDDB object using the given backend/connection parameters (PHP v5.x)
      * 
      * Create a new CDDB object which gives access to CDDB/FreeDB.org servers to 
