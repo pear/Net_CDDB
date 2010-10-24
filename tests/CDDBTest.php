@@ -49,7 +49,7 @@ class Net_CDDBTest extends PHPUnit_Framework_TestCase
     /** @dataProvider drivers */
     function testGetDetails($cddb_driver)
     {
-        $discs = $cddb_driver->searchDatabaseForCD($cddb_driver);
+        $discs = $cddb_driver->searchDatabaseForCD();
         $disc = $cddb_driver->getDetails($discs[0]);
         
         $this->assertTrue($disc instanceof Net_CDDB_Disc, get_class($disc));
@@ -73,16 +73,16 @@ class Net_CDDBTest extends PHPUnit_Framework_TestCase
             10 => 'soundtrack',
             );
         
-        $this->assertEquals($genres, $cddb_driver->getCategories($cddb_driver));
+        $this->assertEquals($genres, $cddb_driver->getCategories());
     }
     
     /** @dataProvider drivers */
     function testSearchDatabaseForCD($cddb_driver)
     {
-        $discs = $cddb_driver->searchDatabaseForCD($cddb_driver);
+        $discs = $cddb_driver->searchDatabaseForCD();
         $this->assertTrue(!empty($discs));
-        $this->assertTrue($discs[0] instanceof Net_CDDB_Disc);
-        $this->assertEquals('Oh, Inverted World', $discs[0]->getTitle($cddb_driver));
+        $this->assertTrue($discs[0] instanceof Net_CDDB_Disc, get_class($discs[0]));
+        $this->assertEquals('Oh, Inverted World', $discs[0]->getTitle());
     }
     
     /** @dataProvider drivers */
@@ -124,14 +124,14 @@ class Net_CDDBTest extends PHPUnit_Framework_TestCase
     /** @dataProvider drivers */
     function testVersion($cddb_driver)
     {
-        $version = $cddb_driver->version($cddb_driver);
+        $version = $cddb_driver->version();
         $this->assertContains('cddbd', $version);
     }
 
     /** @dataProvider drivers */
     function testStatistics($cddb_driver)
     {
-        $stats = $cddb_driver->statistics($cddb_driver);
+        $stats = $cddb_driver->statistics();
         
         $this->assertTrue(isset($stats['current_proto']));
     }
@@ -144,8 +144,8 @@ class Net_CDDBTest extends PHPUnit_Framework_TestCase
         require_once(' ');
         require_once(' ');
         
-        $http = new Net_CDDB_HTTP($cddb_driver);
-        $cddb = new Net_CDDB_CDDBP($cddb_driver);
+        $http = new Net_CDDB_HTTP();
+        $cddb = new Net_CDDB_CDDBP();
         
         $http->send('cddb lscat');
         $cddb->send('cddb lscat');

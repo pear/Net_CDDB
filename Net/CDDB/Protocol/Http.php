@@ -15,7 +15,7 @@
 /**
  * Use the HTTP_Client PEAR class for HTTP connections
  */
-require_once 'HTTP/Request2.php';
+require_once 'HTTP/Request.php';
 
 /**
  * We need the constants from the CDDB class
