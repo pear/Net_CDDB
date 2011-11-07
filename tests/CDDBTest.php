@@ -13,13 +13,13 @@ class Net_CDDBTest extends PHPUnit_Framework_TestCase
         if (!PEAR::isError($connection)) {
            $data["MDB2"] = array(new Net_CDDB_Client('mdb2.mysql://root@localhost/freedb', 'test:///dev/acd0'));
         }
-        $data["HTTP"] = array(new Net_CDDB_Client('http://freedb.org:80', 'test:///dev/acd0'));
+        $data["HTTP"] = array(new Net_CDDB_Client('http://freedb.freedb.org:80', 'test:///dev/acd0'));
         
         if (is_dir('/Users/keith/Sites/Net/docs/FreeDB') && is_readable('/Users/keith/Sites/Net/docs/FreeDB')) {
             $data["Filesystem"] = array(new Net_CDDB_Client('filesystem:///Users/keith/Sites/Net/docs/FreeDB', 'test:///dev/acd0'));
         }
 
-        $data["CDDBP"] = array(new Net_CDDB_Client('cddbp://freedb.org:8880', 'test:///dev/acd0'));
+        $data["CDDBP"] = array(new Net_CDDB_Client('cddbp://freedb.freedb.org:8880', 'test:///dev/acd0'));
 
         return $data;
     }
